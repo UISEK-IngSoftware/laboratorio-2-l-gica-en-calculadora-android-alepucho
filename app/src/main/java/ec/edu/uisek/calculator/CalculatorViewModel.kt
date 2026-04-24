@@ -61,6 +61,7 @@ class CalculatorViewModel : ViewModel(){
 
     private fun enterOperator(operator: String){
         if (num1.isNotBlank()){
+            performCalculation()
             this.operator=operator
         }
     }
